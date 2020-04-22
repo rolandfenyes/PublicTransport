@@ -10,6 +10,7 @@ class ListActivity : AppCompatActivity() {
         const val TYPE_BUS = 1
         const val TYPE_TRAIN = 2
         const val TYPE_BIKE = 3
+        const val TYPE_BOAT = 4
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +32,12 @@ class ListActivity : AppCompatActivity() {
         btnTrain.setOnClickListener {
             val intent = Intent(this, DetailsActivity::class.java)
             intent.putExtra(DetailsActivity.KEY_TRANSPORT_TYPE, TYPE_TRAIN);
+            startActivity(intent)
+        }
+
+        btnBoat.setOnClickListener {
+            val intent = Intent(this, DetailsActivity::class.java)
+            intent.putExtra(DetailsActivity.KEY_TRANSPORT_TYPE, TYPE_BOAT)
             startActivity(intent)
         }
     }
