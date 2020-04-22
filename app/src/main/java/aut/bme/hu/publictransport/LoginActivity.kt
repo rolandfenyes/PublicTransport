@@ -12,7 +12,9 @@ class LoginActivity : AppCompatActivity() {
             e.printStackTrace()
         }
         setTheme(R.style.AppTheme)
-        
+
+
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
     }
