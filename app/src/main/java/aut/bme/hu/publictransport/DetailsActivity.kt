@@ -23,6 +23,7 @@ class DetailsActivity : AppCompatActivity() {
             val intent = Intent(this, PassActivity::class.java)
             intent.putExtra(PassActivity.KEY_TYPE_STRING, getTypeString(transportType))
             intent.putExtra(PassActivity.KEY_DATE_STRING, "${getDateString(dpStartDate)} - ${getDateString(dpEndDate)}")
+            startActivity(intent)
         }
 
     }
