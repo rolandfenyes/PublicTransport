@@ -33,6 +33,7 @@ class DetailsActivity : AppCompatActivity() {
             ListActivity.TYPE_BUS -> "Bus pass"
             ListActivity.TYPE_BIKE -> "Bike pass"
             ListActivity.TYPE_TRAIN -> "Train pass"
+            ListActivity.TYPE_BOAT -> "Boat pass"
             else -> "Unknown pass"
         }
     }
