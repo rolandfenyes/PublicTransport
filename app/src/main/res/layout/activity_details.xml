@@ -91,6 +91,7 @@
             android:text="42000"/>
 
         <Button
+            android:id="@+id/btnPurchase"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
