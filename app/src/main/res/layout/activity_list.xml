@@ -35,7 +35,24 @@
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">>
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/btnBike"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/bikes"
+            android:scaleType="centerCrop"
+            android:padding="0dp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Bike"
+            android:textColor="#FFF"
+            android:textSize="36sp"/>
 
     </FrameLayout>
 
