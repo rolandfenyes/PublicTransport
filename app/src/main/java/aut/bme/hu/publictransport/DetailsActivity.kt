@@ -2,6 +2,7 @@ package aut.bme.hu.publictransport
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_details.*
 
 class DetailsActivity : AppCompatActivity() {
     companion object {
@@ -13,6 +14,7 @@ class DetailsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_details)
 
         val transportType = intent.getIntExtra(KEY_TRANSPORT_TYPE, -1);
+        tvTicketType.text = getTypeString(transportType)
 
     }
 
