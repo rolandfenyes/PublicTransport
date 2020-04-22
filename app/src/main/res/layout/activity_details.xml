@@ -46,7 +46,56 @@
             android:calendarViewShown="false"
             android:datePickerMode="spinner"/>
 
-        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price category"/>
+
+        <RadioGroup
+            android:id="@+id/rgPriceCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbFullPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Full price"/>
+
+            <RadioButton
+                android:id="@+id/rbSenior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Senior"/>
+
+            <RadioButton
+                android:id="@+id/rbStudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student"/>
+
+            <RadioButton
+                android:id="@+id/rbPublicServant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Public servant"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="42000"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:text="Purchase"/>
 
     </LinearLayout>
 
