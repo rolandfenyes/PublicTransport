@@ -34,6 +34,20 @@
             android:calendarViewShown="false"
             android:datePickerMode="spinner"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End date"/>
+
+        <DatePicker
+            android:id="@+id/dpEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"/>
+
+        
+
     </LinearLayout>
 
 </ScrollView>
