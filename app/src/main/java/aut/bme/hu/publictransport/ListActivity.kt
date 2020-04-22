@@ -1,7 +1,9 @@
 package aut.bme.hu.publictransport
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_list.*
 
 class ListActivity : AppCompatActivity() {
     companion object {
@@ -13,5 +15,23 @@ class ListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
+
+        btnBus.setOnClickListener {
+            val intent = Intent(this, DetailsActivity::class.java)
+            intent.putExtra(DetailsActivity.KEY_TRANSPORT_TYPE, TYPE_BUS);
+            startActivity(intent)
+        }
+
+        btnBike.setOnClickListener {
+            val intent = Intent(this, DetailsActivity::class.java)
+            intent.putExtra(DetailsActivity.KEY_TRANSPORT_TYPE, TYPE_BIKE);
+            startActivity(intent)
+        }
+
+        btnTrain.setOnClickListener {
+            val intent = Intent(this, DetailsActivity::class.java)
+            intent.putExtra(DetailsActivity.KEY_TRANSPORT_TYPE, TYPE_TRAIN);
+            startActivity(intent)
+        }
     }
 }
