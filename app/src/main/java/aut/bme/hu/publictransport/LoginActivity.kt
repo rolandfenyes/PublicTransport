@@ -2,6 +2,7 @@ package aut.bme.hu.publictransport
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
 
@@ -13,9 +14,21 @@ class LoginActivity : AppCompatActivity() {
         }
         setTheme(R.style.AppTheme)
 
-
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        btnLogin.setOnClickListener() {
+            if (etEmail.text.isEmpty()) {
+                etEmail.requestFocus()
+                etEmail.error = "Email cannot be empty!"
+            }
+            else if (etPassword.text.isEmpty()) {
+                etPassword.requestFocus()
+                etPassword.error = "Password cannot be empty!"
+            }
+            else {
+                //TODO login
+            }
+        }
     }
 }
